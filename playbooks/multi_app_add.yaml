@@ -14,13 +14,13 @@
     tower_action: add
     tower_bigip: "local-lab"
     tower_tenant: "planets"
-    tower_app_name: venus
+    tower_app_name: jupiter
     tower_app_template: http
-    tower_app_vs_ip: 1.1.3.9
+    tower_app_vs_ip: 1.1.3.12
     tower_app_members:
-      - 1.1.3.41
-      - 1.1.3.42
-      - 1.1.3.43
+      - 1.1.3.45
+      - 1.1.3.46
+      - 1.1.3.47
   vars_files:
     - ../../creds/big_local_creds.yaml
     
