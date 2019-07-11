@@ -50,12 +50,12 @@
 
   - set_fact: 
       declaration: "{{ tenants | to_json }}"
-    with_items: {{tenant_list}}
+    with_items: "{{ tenant_list }}"
 
 
   - name: render template
     set_fact:
-      tenant_body: "{{ lookup('template', '../j2/multi_app_all_tenants_macro.j2', split_lines=False) }}"
+      tenant_body: "{{ lookup('template', '../j2/multi_app_all_tenants_macro_httponly.j2', split_lines=False) }}"
 
   - debug:
       msg: "tenants declaration: {{ tenant_body }} "  
